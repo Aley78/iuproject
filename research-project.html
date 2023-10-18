@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="iiui_logo.png" type="image/png">
+
+    <title>Re-search Project</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+    <!-- Sidenav -->
+    <nav
+      id="sidenav-4"
+      class="group fixed bg-[#03291e] left-0 top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-slim='true']:hidden data-[te-sidenav-slim-collapsed='true']:w-[77px] data-[te-sidenav-slim='true']:w-[77px] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800 [&[data-te-sidenav-slim-collapsed='true'][data-te-sidenav-slim='false']]:hidden [&[data-te-sidenav-slim-collapsed='true'][data-te-sidenav-slim='true']]:[display:unset]"
+      data-te-sidenav-init
+      data-te-sidenav-hidden="false"
+      data-te-sidenav-mode="side"
+      data-te-sidenav-slim="true"
+      data-te-sidenav-content="#slim-content"
+      data-te-sidenav-slim-collapsed="true"
+    >
+      <ul class="relative m-0 list-none px-[0.2rem] pt-10" data-te-sidenav-menu-ref>
+        <li class="relative">
+          <div class="flex justify-around">
+            <div>
+              <img src="/avatar.png" height="35px" width="35px" alt="name" />
+            </div>
+            <div class="flex items-center">
+              <span
+                class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden text-white"
+                data-te-sidenav-slim="false"
+                >Tariq Sadad</span
+              >
+            </div>
+          </div>
+        
+        </li>
+        <!-- 1 st -->
+        <li class="relative pt-7">
+          <a
+            class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition hover:text-green-500 duration-300 ease-linear active:bg-green-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/> </svg>
+            </span>
+            <span
+              class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+              data-te-sidenav-slim="false"
+              >Home</span
+            >
+            <span
+              class="absolute right-0 ml-auto mr-[0.5rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+              data-te-sidenav-rotate-icon-ref
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </a>
+          <ul
+            class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+            data-te-sidenav-collapse-ref
+          >
+          <li class="relative flex items-center">
+            <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+            <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+            <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+                data-te-sidenav-link-ref href="/DataforQSRanking.html">Dashboard</a>
+        </li>
+          </ul>
+        </li>
+       
+<!-- 2 nd -->
+        <a
+        class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500  data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+        data-te-sidenav-link-ref
+      >
+        <span
+          class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+        >
+        <svg style="color: rgb(201, 199, 186);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-range-fill" viewBox="0 0 16 16"> <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 7V5H0v5h5a1 1 0 1 1 0 2H0v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9h-6a1 1 0 1 1 0-2h6z" fill="#c9c7ba"></path> </svg>
+        </span>
+        <span
+          class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+          data-te-sidenav-slim="false"
+          >Register as Lab Manager</span
+        >
+        
+      </a>
+
+<!-- 3 rd -->
+    <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500  active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none whitespace-normal" data-te-sidenav-link-ref>
+      <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300 break-words ">
+        <svg style="color: rgb(201, 199, 186);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-range-fill" viewBox="0 0 16 16"> <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 7V5H0v5h5a1 1 0 1 1 0 2H0v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9h-6a1 1 0 1 1 0-2h6z" fill="#c9c7ba"></path> </svg>
+      </span>
+      <span class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden" data-te-sidenav-slim="false">Register as MS/PHD<br>Coordinate</span>
+  </a>
+
+  <!-- 4 -->
+
+  <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500  active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none whitespace-normal"
+  data-te-sidenav-link-ref href="/DataforQSRanking.html">
+  <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300 break-words ">
+    <svg style="color: rgb(192, 190, 175);" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-database">
+          <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" fill="#c0beaf"></path>
+          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" fill="#c0beaf"></path>
+        </svg>
+  </span>
+  <span class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+    data-te-sidenav-slim="false">Data for QS Ranking</span>
+</a>
+
+      <!-- 5 -->
+      <li class="relative">
+        <a
+            class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+            data-te-sidenav-link-ref
+        >
+            <span
+                class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+            <svg style="color: rgb(206, 204, 192);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path fill="#ceccc0" fill-rule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8 16 3.586 17.586 2zm-3 3-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5z" clip-rule="evenodd"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 14H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4" fill="#ceccc0"></path></svg>
+            </span>
+            <span
+                class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+                data-te-sidenav-slim="false"
+                >Add Research Activity</span
+            >
+            <span
+                class="absolute right-0 ml-auto mr-[0.5rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                data-te-sidenav-rotate-icon-ref
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                    />
+                </svg>
+            </span>
+        </a>
+        <ul class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block" data-te-sidenav-collapse-ref>
+            <li class="relative flex items-center">
+                <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+                <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+                <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="Re-search-paper.html">Research Paper</a>
+            </li>
+            <li class="relative flex items-center">
+                <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+                <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+                <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="patent.html">Patent</a>
+            </li>
+            <li class="relative flex items-center">
+                <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+                <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+                <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="book.html">Book</a>
+            </li>
+            <li class="relative flex items-center">
+                <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+                <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+                <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="research-project.html">Research Project</a>
+            </li>
+            <li class="relative flex items-center">
+              <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+              <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+              <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="participation-training.html">Participation in Training</a>
+          </li>
+            <li class="relative flex items-center">
+                <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+                <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+                <a class="flex h-10 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref href="presentation.html">Research Paper Presentation <br> in Conferences</a>
+            </li>
+        </ul>
+    </li>
+    
+<!-- 6 -->
+<li class="relative">
+  <a
+    class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+    data-te-sidenav-link-ref
+  >
+    <span
+      class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+    >
+    <svg style="color: rgb(205, 203, 193);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,1H7C5.9,1,5,1.9,5,3v18c0,1.1,0.9,2,2,2h10c1.1,0,2-0.9,2-2V3C19,1.9,18.1,1,17,1z M7,18V6h10v12H7z M16,11V9.14 C16,8.51,15.55,8,15,8H9C8.45,8,8,8.51,8,9.14l0,1.96c0.55,0,1,0.45,1,1c0,0.55-0.45,1-1,1l0,1.76C8,15.49,8.45,16,9,16h6 c0.55,0,1-0.51,1-1.14V13c-0.55,0-1-0.45-1-1C15,11.45,15.45,11,16,11z M12.5,14.5h-1v-1h1V14.5z M12.5,12.5h-1v-1h1V12.5z M12.5,10.5h-1v-1h1V10.5z" fill="#cdcbc1"></path></svg>
+    </span>
+    <span
+      class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+      data-te-sidenav-slim="false"
+      >Apply Online</span
+    >
+    <span
+      class="absolute right-0 ml-auto mr-[0.5rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+      data-te-sidenav-rotate-icon-ref
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </a>
+  <ul
+    class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+    data-te-sidenav-collapse-ref
+  >
+  <li class="relative flex items-center">
+    <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+    <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+    <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref>Dummy</a>
+</li>
+  </ul>
+</li>
+<!-- 7 -->
+<li class="relative">
+  <a
+    class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none"
+    data-te-sidenav-link-ref
+  >
+    <span
+      class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+    >
+    <svg style="color: rgb(194, 191, 173);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square-fill" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm.5 5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM4 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" fill="#c2bfad"></path> </svg>
+    </span>
+    <span
+      class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden"
+      data-te-sidenav-slim="false"
+      >Show Research Activity</span
+    >
+    <span
+      class="absolute right-0 ml-auto mr-[0.5rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+      data-te-sidenav-rotate-icon-ref
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </a>
+  <ul
+    class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+    data-te-sidenav-collapse-ref
+  >
+  <li class="relative flex items-center">
+    <div class="absolute left-[37px] mr-5 top-1/2 h-2 w-2 -translate-y-1/2 transform rounded-full bg-gray-500"></div>
+    <div class="absolute left-[40px] mr-10 top-0 h-full w-[2px] bg-gray-500"></div>
+    <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none" data-te-sidenav-link-ref>Dummy</a>
+</li>
+  </ul>
+</li>
+  <!-- 8 -->
+  <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500  active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none whitespace-normal" data-te-sidenav-link-ref>
+    <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300 break-words ">
+      <svg style="color: rgb(194, 191, 173);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square-fill" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm.5 5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM4 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" fill="#c2bfad"></path> </svg>
+    </span>
+    <span class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden" data-te-sidenav-slim="false">Search Memorendum of<br>Activity</span>
+</a>
+<!-- 9 -->
+<a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:text-green-500 data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none whitespace-normal" data-te-sidenav-link-ref>
+  <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300 break-words ">
+    <svg style="color: rgb(194, 191, 173);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-square-fill" viewBox="0 0 16 16"> <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm.5 5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM4 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" fill="#c2bfad"></path> </svg>
+  </span>
+  <span class="group-[&[data-te-sidenav-slim-collapsed='true']]:data-[te-sidenav-slim='false']:hidden" data-te-sidenav-slim="false">Honaria Report</span>
+</a>
+      </ul>
+    </nav>
+   
+  
+
+    
+    <div class="flex justify-between bg-gray-100">
+      <div id="slim-content">
+
+        <!-- Side Nav -->
+  
+        <button
+      class="inline-block rounded ml-5 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-black transition duration-150 ease-in-out lg:hidden sm:block md:block"
+      data-te-sidenav-toggle-ref
+      data-te-target="#sidenav-4"
+      aria-controls="#sidenav-4"
+      aria-haspopup="true">
+      <span class="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-black">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-5 w-5">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+        <!-- Toggler -->
+        <button
+          class="inline-block rounded ml-5 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-black transition duration-150 ease-in-out hidden lg:block 2xl:block"
+          aria-haspopup="true"
+          id="slim-toggler"
+        >
+          <span class="block [&>svg]:h-6 [&>svg]:w-6 [&>svg]:text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div id="divToHide" class=" relative mr-12 flex flex-col md:flex-row lg:flex-row xl:flow-row items-center justify-between space-x-4">
+          <div><img src="/avatar.png" height="20px" width="20px" alt=""></div>
+          <div class="text-sm">Tariq Sadad</div>
+            <div class="relative">
+                <button id="dropdownButton" class="text-gray-800 font-semibold rounded inline-flex items-center py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 items-center" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                    </svg>
+                </button>
+                <div id="dropdownMenu" class="hidden absolute mt-2 space-y-2 bg-white border border-gray-300 rounded-lg right-2 py-2 w-18 z-10 overflow-hidden">
+                  <a href="/Index.html" class="block px-2 py-2 text-sm text-gray-800">Logout</a>
+                  <a href="#" class="block px-2 py-2 text-sm text-gray-800">Edit</a>
+                    <!-- <a href="#" class="block px-2 py-2 text-sm text-gray-800">Delete</a> -->
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- after sections i am adding all the tabels needed  -->
+  <div class="ml-[12.5vw]">
+    <div class="ml-[5px] mt-[5px] mb-[5px]">
+        <span class="text-lg lg:text-2xl xl:text-2xl">Insert Your Research Project Information</span>
+        <span class="text-sm xl:text-md 2xl:text-md">Be Careful Before Inserting Your Data It Can't Be Changed After Submission</span>
+    </div>
+    <hr>
+    <div class="flex justify-center h-[50vh]">
+        <div class="w-full md:w-[70vw] sm:w-[50vw] p-4">
+            <form class="bg-white rounded px-4 py-6" id="researchForm">
+                <!--Principal Investigator  -->
+              <div class="mb-4 md:flex items-center justify-between">
+                <label class="text-gray-700 text-sm font-bold" for="issn">Principal Investigator <span class="text-red-500">*</span>
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="principalInvestigator"
+                    type="text"
+                    placeholder="Principal Investigator"
+                />
+            </div>
+              
+              <!-- Co-Principal Investigator -->
+              <div class="mb-4 md:flex items-center justify-between">
+                <label class="text-gray-700 text-sm font-bold" for="issn">Co-Principal Investigator <span class="text-red-500">*</span>
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="coPrincipalInvestigator"
+                    type="text"
+                    placeholder="Co-Principal Investigator"
+                />
+            </div>
+
+                <!-- Title of Project -->
+                <div class="mb-4 md:flex items-center justify-between">
+                  <label class="text-gray-700 text-sm font-bold" for="issn">Title of Project <span class="text-red-500">*</span> <span class="invisible">hhhhhhhhhh</span>
+                  </label>
+                  <input
+                      class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="title"
+                      type="text"
+                      placeholder="Title of Project"
+                  />
+              </div>
+
+              <!-- Select Category of Project -->
+              <div class="mb-4 md:flex items-center justify-between">
+                <label class="text-gray-700 text-sm font-bold" for="year">Select Category of Project <span class="text-red-500">*</span></label>
+                <select
+                    class="shadow border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="categoryOfProject"
+                >
+                    <option value="A">Category A</option>
+                    <option value="B">Category B</option>
+                </select>
+            </div>
+                <!-- Name of Funding Agency -->
+                <div class="mb-4 md:flex items-center justify-between">
+                    <label class="text-gray-700 text-sm font-bold" for="journalTitle">Name of Funding Agency <span class="text-red-500">*</span></label>
+                    <input
+                        class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="fundingAgency"
+                        type="text"
+                        placeholder="Name of Funding Agency"
+                    />
+                </div>
+
+                <!-- Select Year of Approval -->
+                <div class="mb-4 md:flex items-center justify-between">
+                    <label class="text-gray-700 text-sm font-bold" for="year">Select Year of Approval <span class="text-red-500">*</span></label>
+                    <select
+                        class="shadow border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="year"
+                    >
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+                <!-- Total Cost of Project (Amount in Millions) -->
+                <div class="mb-4 md:flex items-center justify-between">
+                  <label class="text-gray-700 text-sm font-bold" for="journalTitle">Total Cost of Project (Amount in Millions)<span class="text-red-500">*</span></label>
+                  <input
+                      class="shadow appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="projectCost"
+                      type="text"
+                      placeholder="Total Cost of Project"
+                  />
+              </div>
+
+
+          
+                <!-- Upload Soft Copy File Input -->
+                <div class="mb-4 md:flex items-center justify-between">
+                    <label class="text-gray-700 text-sm font-bold" for="softCopy">Upload Soft-Copy of Research Paper <span class="text-red-600">*<span></label>
+                    <input
+                        class="appearance-none border rounded w-3/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="softCopy"
+                        type="file"
+                    />
+                </div>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="flex items-start justify-between md:justify-start pt-6">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded focus:outline-none focus:shadow-outline"
+                        type="button"  id="resetButton" >Reset</button> &nbsp;
+                    <button class="bg-[#008000] hover:bg-green-700 text-white font-bold py-2 px-3 rounded focus:outline-none focus:shadow-outline"
+                        type="reset">Submit</button>
+                </div>
+                <div class="flex lg:justify-end md:justify-center sm:justify-center mt-6 md:mt-14">
+                  <div class="text-sm text-gray-600"><span class="font-bold text-sm">Copyright ©2023 ORIC.</span>  International Islamic University, Islamabad, Pakistan.</div>
+                </div>           
+            </form>
+
+        </div>
+        
+    </div>
+    
+</div>
+<script>
+
+  const navbar = document.getElementById('sidenav-4');
+  const yourDiv = document.getElementById('divToHide');
+  
+  // Add click event listener to the navbar
+  navbar.addEventListener('click', function() {
+    // Get the computed style of the navbar
+    const computedStyle = window.getComputedStyle(navbar);
+    // Extract the translateX value from the transform property
+    const transformValue = computedStyle.getPropertyValue('transform');
+  
+    // Check if the translateX value is '0%' (navbar is visible)
+    if (transformValue === 'matrix(1, 0, 0, 1, 0, 0)' || transformValue === 'none') {
+      // Navbar is visible, hide the div
+      yourDiv.style.display = 'none';
+    } else {
+      // Navbar is hidden, show the div
+      yourDiv.style.display = 'block';
+    }
+  });
+  
+  </script>
+    <script src="/DataforQSRanking.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script>
+      const dropdownButton = document.getElementById('dropdownButton');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+  
+      dropdownButton.addEventListener('click', function() {
+          dropdownMenu.classList.toggle('hidden');
+      });
+  </script>
+  </body>
+</html>

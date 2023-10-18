@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Student Sign-Up</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Droid+Sans&family=Arial&family=Helvetica+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="iiui_logo.png" type="image/png" />
+    <style>
+      .text-with-lines::before,
+      .text-with-lines::after {
+        content: "";
+        flex: 1;
+        border-bottom: 0.5px solid #000;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex items-center pt-2">
+      <div><img src="iiui_logo.png" class="h-16 w-16 ml-2 mt-1" alt="" /></div>
+      <div class="ml-2 text-lg md:text-4xl text-[#5A738E]">
+        International Islamic University, Islamabad
+      </div>
+    </div>
+    <div class="flex h-[1300px] flex-col md:flex-row">
+      <div class="w-full flex justify-center py-3 md:py-28 lg:py-28">
+        <div class="w-[20vw] md:w-0 text-white hidden lg:block">.</div>
+        <div>
+          <img
+            src="Logo.png"
+            alt=""
+            class="h-36 w-36 mt-2 md:h-[301px] md:w-[306px] md:mt-0"
+          />
+        </div>
+      </div>
+      <div class="w-full flex justify-center items-center">
+        <div>
+          <div
+            class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+          >
+            <div class="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
+              <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                <div
+                  class="text-xl md:text-2xl text-center text-with-lines px-4 flex items-center"
+                >
+                  <span class="px-6 text-[#73879C]">Create Account</span>
+                </div>
+                <form class="space-y-4 md:space-y-6" action="/Index.html">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Name"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      name="cnic"
+                      id="cnic"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="CNIC"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      name="registration"
+                      id="registration"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Registration Number"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <select
+                      name="gender"
+                      id="gender"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      required=""
+                    >
+                      <option value="" disabled selected>Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Not Specified</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <select
+                      name="faculty"
+                      id="faculty"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      required=""
+                    >
+                      <option value="" disabled selected>
+                        Select Faculty Name
+                      </option>
+                      <option value="faculty1">Arabic</option>
+                      <option value="faculty2">BIC</option>
+                      <option value="faculty3">Center For Advance</option>
+                      <option value="faculty4">
+                        Electronics & Photovolpaic Engineering
+                      </option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <select
+                      name="department"
+                      id="department"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      required=""
+                    >
+                      <option value="" disabled selected>
+                        Engineering and Technology
+                      </option>
+                      <option value="dept1">
+                        International Institute of Islamic Economics
+                      </option>
+                      <option value="dept2">Islamic Studies</option>
+                      <option value="dept3">
+                        Islamic Studies Language and Literature
+                      </option>
+                      <option value="dept4">Management Sciences</option>
+                      <option value="dept5">Other</option>
+                      <option value="dept6">Sciences</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <select
+                      name="program"
+                      id="program"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      required=""
+                    >
+                      <option value="" disabled selected>
+                        Shariah and Law
+                      </option>
+                      <option value="program1">Social Sciences</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <select
+                      name="semester"
+                      id="semester"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      required=""
+                    >
+                      <option value="" disabled selected>
+                        Select Semester
+                      </option>
+                      <option value="semester1">F06</option>
+                      <option value="semester2">S06</option>
+                      <option value="semester3">F07</option>
+                      <option value="semester4">SO7</option>
+                      <option value="semester5">F08</option>
+                      <option value="semester6">S08</option>
+                      <option value="semester7">F09</option>
+                      <option value="semester8">SO9</option>
+                      <option value="semester9">F10</option>
+                      <option value="semester10">S10</option>
+                      <option value="semester11">F11</option>
+                      <option value="semester12">S11</option>
+                      <option value="semester13">F12</option>
+                      <option value="semester14">S12</option>
+                      <option value="semester15">F13</option>
+                      <option value="semester16">S13</option>
+                      <option value="semester17">F14</option>
+                      <option value="semester18">S14</option>
+                      <option value="semester19">F15</option>
+                      <option value="semester20">S15</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Username"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Email"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Password"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="password"
+                      name="repassword"
+                      id="repassword"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                      placeholder="Re-enter Password"
+                      required=""
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="file"
+                      name="file"
+                      id="file"
+                      class="block bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 w-full p-2.5"
+                    />
+                  </div>
+
+                  <div class="flex justify-center">
+                    <div
+                      class="flex justify-between border border-[#ccc] rounded py-2 px-3 w-[300px]"
+                    >
+                      <div class="flex items-center justify-center">
+                        <div class="flex items-start">
+                          <div class="flex items-center h-5">
+                            <input
+                              id="remember"
+                              aria-describedby="remember"
+                              type="checkbox"
+                              class="w-7 h-7 border border-[#ccc] rounded border-2 bg-white"
+                              required=""
+                            />
+                          </div>
+                          <div class="ml-2 text-sm">
+                            <label for="remember" class="text-black font-[14px]"
+                              >I'm not a robot</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <img
+                          src="/recaptcha-badge-icon.png"
+                          class="w-[70px] h-[60px]"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-center">
+                    <button type="submit"
+                      class="text-[14px] text-center border border-[#ccc] py-1 px-3 rounded hover:bg-gray-400"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                  <hr />
+                  <div class="flex justify-center items-center">
+                    Already have an account?
+                    <span
+                      ><a href="Index.html" class="hover:underline">Login</a>
+                    </span>
+                  </div>
+                  <div
+                    class="flex justify-center text-center items-center py-7"
+                  >
+                    Copyright © 2023 ORIC. International Islamic University,
+                    Islamabad, Pakistan.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

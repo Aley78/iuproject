@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Droid+Sans&family=Arial&family=Helvetica+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="iiui_logo.png" type="image/png">
+
+    <style>
+        .text-with-lines::before,
+        .text-with-lines::after {
+            content: "";
+            flex: 1;
+            border-bottom: 0.5px solid #000;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="flex items-center pt-2">
+    <div><img src="iiui_logo.png" class="h-16 w-16 ml-2 mt-1" alt="" /></div>
+    <div class="ml-2 text-lg md:text-4xl text-[#5A738E]">
+        International Islamic University, Islamabad
+    </div>
+</div>
+<div class="flex h-screen flex-col md:flex-row">
+    <div class="w-full flex justify-center items-center">
+        <div class="w-[20vw] md:w-0 text-white hidden lg:block">.</div>
+        <div>
+            <img src="Logo.png" alt="" class="h-36 w-36 mt-2 md:h-[301px] md:w-[306px] md:mt-0" />
+        </div>
+    </div>
+    <div class="w-full flex justify-center items-center">
+        <div>
+            <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                <div class="w-full bg-white rounded-lg md:mt-0 sm:max-w-md xl:p-0">
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <div class="text-xl md:text-2xl text-center text-with-lines px-4 flex items-center">
+                            <span class="px-6 text-[#73879C]">Login</span>
+                        </div>
+                        <form class="space-y-4 md:space-y-6" action="/DataforQSRanking.html" id="form">
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                    placeholder="Username"
+                                    required=""
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="Enter Password"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                    required=""
+                                />
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input
+                                            id="showPassword"
+                                            aria-describedby="showPassword"
+                                            type="checkbox"
+                                            class="w-4 h-4 border border-green-500 rounded bg-gray-50"
+                                        />
+                                    </div>
+                                    <div class="ml-1 text-sm">
+                                        <label for="showPassword" class="text-[#008000] font-bold"
+                                        >Show Password</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <div
+                                    class="flex justify-between border border-[#ccc] rounded py-2 px-3 w-[300px]"
+                                >
+                                    <div class="flex items-center justify-center">
+                                        <div class="flex items-start">
+                                            <div class="flex items-center h-5">
+                                                <input
+                                                    id="remember"
+                                                    aria-describedby="remember"
+                                                    type="checkbox"
+                                                    class="w-7 h-7 border border-[#ccc] rounded border-2 bg-white"
+                                                />
+                                            </div>
+                                            <div class="ml-2 text-sm">
+                                                <label for="remember" class="text-black font-[14px]"
+                                                >I'm not a robot</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="/recaptcha-badge-icon.png"
+                                            class="w-[70px] h-[60px]"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <button type="submit"
+                                    class="text-[14px] text-center border border-[#ccc] py-1 px-3 rounded hover:bg-gray-400"
+                                >
+                                    Login
+                                </button>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="flex justify-center items-center">
+                                    New to the site?
+                                    <span
+                                    ><a
+                                        href="student-signup-page.html"
+                                        class="hover:underline"
+                                    >
+                                        Register as a Student</a
+                                    >
+                                </span>
+                                </div>
+                                <div class="flex justify-center items-center text-center">
+                                    <span
+                                    ><a
+                                        href="faculty-signup-page.html"
+                                        class="hover:underline"
+                                    >Register as a Faculty Member/Employee</a
+                                >
+                            </span>
+                            </div>
+                            <div
+                                class="flex justify-center items-center text-[#FF0000] py-3 font-bold"
+                            >
+                                <span class="hover:underline cursor-pointer">
+                                    Forgot Your Password</span
+                                >
+                            </div>
+                            <div
+                                class="flex justify-center text-center items-center py-7"
+                            >
+                                Copyright © 2023 ORIC. International Islamic University,
+                                Islamabad, Pakistan.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const showPasswordCheckbox = document.getElementById("showPassword");
+    const passwordInput = document.getElementById("password");
+
+    showPasswordCheckbox.addEventListener("change", function () {
+        if (showPasswordCheckbox.checked) {
+            passwordInput.type = "text"; 
+        } else {
+            passwordInput.type = "password"; 
+        }
+    });
+</script>
+<script src="/Index.js"></script>
+</body>
+</html>
